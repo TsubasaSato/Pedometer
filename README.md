@@ -28,8 +28,9 @@ This program measures the number of steps using my own algorithm.
  
 # 2. 結論
 ## 2.1 使用したプログラム
--- MainActivity.java を参照
--- activity_main.xml を参照
+
+-  MainActivity.java を参照
+-  activity_main.xml を参照
 
 ## 2.2 実行画面
  アプリを起動するとこの画面が表示される。
