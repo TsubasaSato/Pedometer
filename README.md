@@ -8,23 +8,23 @@ This program measures the number of steps using my own algorithm.
 ## 1.2 使用した技術・考え方
  スマートフォンには3軸の加速度センサーが存在する。
  
- ![3軸センサー](https://imgur.com/ffXnJuh)
+ ![3軸センサー](https://imgur.com/ffXnJuh.jpg)
  
  これらの加速度センサーから得られる加速度の増減を利用して歩数をカウントする。
  しかし、スマホがどのような状態で保持されているか分からないため、1軸の加速度だけでは正確に計測できない可能性がある。
  そこで3軸の加速度を合成した以下の値の増減を利用して歩数を計測することにする。
  
- ![合成値](https://imgur.com/q3j4d8v)
+ ![合成値](https://imgur.com/q3j4d8v.jpg)
  
  歩行時、3軸の加速度を合成した値を取り、3軸の加速度を合成した値の極大値を取った回数を歩数としてカウントする。
  
- ![極大値カウント](https://imgur.com/j83uyPB)
+ ![極大値カウント](https://imgur.com/j83uyPB.jpg)
  
  また、センサーから取得した生のデータには歩数計算に邪魔なノイズが含まれるため、余分なノイズを取り除き、
  なるべく正しい歩数をカウントできるようにローパスフィルタと呼ばれるフィルタリング処理を行う。
  ローパスフィルタとは高周波成分を取り除いて、低周波成分のみを取り出す処理である。
  
- ![ローバスフィルタ](https://imgur.com/zI6u6W1)
+ ![ローバスフィルタ](https://imgur.com/zI6u6W1.jpg)
  
 # 2. 結論
 ## 2.1 使用したプログラム
@@ -35,15 +35,15 @@ This program measures the number of steps using my own algorithm.
 ## 2.2 実行画面
  アプリを起動するとこの画面が表示される。
  
- ![起動画面](https://imgur.com/62SInm3)
+ ![起動画面](https://imgur.com/62SInm3.jpg)
  
- ![Startボタンを押した後](https://imgur.com/65XJtJZ)
+ ![Startボタンを押した後](https://imgur.com/65XJtJZ.jpg)
  
  Startボタンを押すとこの画面が表示される。
  他にもRestartボタンは押されると歩数を0歩に初期化することができる。
  Stopボタンを押すと計測をいったんストップすることができる。
  
- ![実際に歩いて計測](https://imgur.com/pi2yErF)
+ ![実際に歩いて計測](https://imgur.com/pi2yErF.jpg)
  
  実際に歩いて計測した。14歩歩いたが、計測上では16歩となってしまった。
  2歩分の誤差が生まれてしまった。
